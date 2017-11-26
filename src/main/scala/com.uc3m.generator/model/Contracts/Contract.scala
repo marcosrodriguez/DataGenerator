@@ -3,12 +3,12 @@ package com.uc3m.generator.model.Contracts
 import org.joda.time.DateTime
 import org.joda.time.format.DateTimeFormat
 
-case class Contracts (contract_id: String,
-                      iban: String,
-                      description: String,
-                      openDate: DateTime,
-                      state: String,
-                      closeDate: DateTime
+case class Contract(contract_id: String,
+                    iban: String,
+                    description: String,
+                    openDate: DateTime,
+                    state: String,
+                    closeDate: DateTime
                      ){
 
 

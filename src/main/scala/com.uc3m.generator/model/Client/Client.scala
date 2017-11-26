@@ -1,11 +1,16 @@
 package com.uc3m.generator.model.Client
 
-case class Client (id: String,
-                   name: String,
-                   surname: String,
-                   client_type: String,
-                  ){
+import scala.collection.mutable.ArrayBuffer
 
-  override def toString() = f"$id;$name;$surname;$client_type"
+case class Client (id: String,
+                   nombre: String,
+                   segmento: String,
+                   nivel: String,
+                   earning: Earning,
+                   expenses: ArrayBuffer[Expenses]
+                  ) {
+
+
+  override def toString() = f"$id;$nombre;$segmento;$nivel"
 
 }
